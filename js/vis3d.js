@@ -13,8 +13,8 @@ function unpack(rows, key) {
 }
   
 var z_data=[ ]
-//for(i=0;i<24;i++) // use all rows, not just 24!
-for(i=0;i<200;i++) // use all rows, not just 24!
+//for(i=0;i<24;i++) // as test.csv
+for(i=0;i<599;i++) // for dem2015_5km --> need to remove hardwiring
 {
   z_data.push(unpack(rows,i));
 }
