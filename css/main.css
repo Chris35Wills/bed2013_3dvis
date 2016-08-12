@@ -1,0 +1,11 @@
+body {
+    margin: 1;
+    padding: 1;
+}
+
+div {
+    width: 20%;
+    /*height: 30%;*/
+    
+    max-height: 700px;
+}
