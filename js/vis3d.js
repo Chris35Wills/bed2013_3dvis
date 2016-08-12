@@ -34,6 +34,26 @@ var layout = {
     r: 50,
     b: 65,
     t: 90,
+  },
+  xaxis: {
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 0.25,
+    ticklen: 8,
+    tickwidth: 4,
+    tickcolor: '#000'
+    title: 'Easting'
+  },
+  yaxis: {
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 0.25,
+    ticklen: 8,
+    tickwidth: 4,
+    tickcolor: '#000'
+    title: 'Northing'
   }
 };
 Plotly.newPlot('myDiv', data, layout);
