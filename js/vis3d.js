@@ -14,7 +14,7 @@ function unpack(rows, key) {
   
 var z_data=[ ]
 //for(i=0;i<24;i++) // use all rows, not just 24!
-for(i=0;i<rows;i++) // use all rows, not just 24!
+for(i=0;i<200;i++) // use all rows, not just 24!
 {
   z_data.push(unpack(rows,i));
 }
