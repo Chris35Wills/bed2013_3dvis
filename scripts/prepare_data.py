@@ -29,10 +29,10 @@ dem12_aoi4=dem2012_ext4.r
 
 
 #arrays to dataframes
-aoi1_DF=pd.DataFrame(dem12_aoi1)
-aoi2_DF=pd.DataFrame(dem12_aoi2)
-aoi3_DF=pd.DataFrame(dem12_aoi3)
-aoi4_DF=pd.DataFrame(dem12_aoi4)
+aoi1_DF=pd.DataFrame(np.round(dem12_aoi1))
+aoi2_DF=pd.DataFrame(np.round(dem12_aoi2))
+aoi3_DF=pd.DataFrame(np.round(dem12_aoi3))
+aoi4_DF=pd.DataFrame(np.round(dem12_aoi4))
 
 ## quick plot
 plotting=False
