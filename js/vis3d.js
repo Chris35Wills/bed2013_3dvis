@@ -33,13 +33,15 @@ var layout = {
     r: 50,
     b: 65,
     t: 90,
-  },
-  xaxis: {
-    title: 'Easting',
-  },
-  yaxis: {
-    title: 'Northing',
   }
 };
+  //},
+  //xaxis: {
+  //  title: 'Easting',
+  //},
+  //yaxis: {
+  //  title: 'Northing',
+  //}
+//};
 Plotly.newPlot('myDiv', data, layout);
 });
