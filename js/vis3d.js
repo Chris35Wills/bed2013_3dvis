@@ -25,10 +25,9 @@ var data = [{
   
 var layout = {
   title: 'Bedmap 2013',
-  //autosize: false,
-  autosize: true,
+  autosize: false,
   width: 800,
-  //height: 800,
+  height: 800,
   margin: {
     l: 65,
     r: 50,
