@@ -6,8 +6,8 @@
 // 1 1 2 2 
 
 
-Plotly.d3.csv('https://github.com/Chris35Wills/bed2013_3dvis/blob/master/data/aoi3.csv', function(err, rows){
 //Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/api_docs/mt_bruno_elevation.csv', function(err, rows){
+Plotly.d3.csv('https://github.com/Chris35Wills/bed2013_3dvis/blob/master/data/aoi3.csv', function(err, rows){
 function unpack(rows, key) {
   return rows.map(function(row) { return row[key]; });
 }
