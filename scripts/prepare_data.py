@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import pandas as pd 
 import georaster as geo
 
 # xkcd plot style to make things light and whimsicle
@@ -26,6 +27,13 @@ dem12_aoi2=dem2012_ext2.r
 dem12_aoi3=dem2012_ext3.r
 dem12_aoi4=dem2012_ext4.r
 
+
+#arrays to dataframes
+aoi1_DF=pd.DataFrame(dem12_aoi1)
+aoi2_DF=pd.DataFrame(dem12_aoi2)
+aoi3_DF=pd.DataFrame(dem12_aoi3)
+aoi4_DF=pd.DataFrame(dem12_aoi4)
+
 ## quick plot
 plotting=False
 if plotting:
@@ -50,8 +58,9 @@ if plotting:
 
 #write arrays to csv
 
+
 opath="C:/Github/bed2013_3dvis/data"
-np.savetxt(("%s/aoi1.csv" %opath), dem12_aoi1, delimiter=",")
-np.savetxt(("%s/aoi2.csv" %opath), dem12_aoi2, delimiter=",")
-np.savetxt(("%s/aoi3.csv" %opath), dem12_aoi3, delimiter=",")
-np.savetxt(("%s/aoi4.csv" %opath), dem12_aoi4, delimiter=",")
+aoi1_DF.to_csv(("%s/aoi1.csv" %opath), sep=",", header=True, index=True)
+aoi2_DF.to_csv(("%s/aoi2.csv" %opath), sep=",", header=True, index=True)
+aoi3_DF.to_csv(("%s/aoi3.csv" %opath), sep=",", header=True, index=True)
+aoi4_DF.to_csv(("%s/aoi4.csv" %opath), sep=",", header=True, index=True)
