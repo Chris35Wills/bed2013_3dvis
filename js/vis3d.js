@@ -24,10 +24,11 @@ var data = [{
         }];
   
 var layout = {
-  title: 'Mt Bruno Elevation',
-  autosize: false,
+  title: 'Bedmap 2013',
+  //autosize: false,
+  autosize: true,
   width: 800,
-  height: 800,
+  //height: 800,
   margin: {
     l: 65,
     r: 50,
