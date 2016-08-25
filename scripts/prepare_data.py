@@ -64,3 +64,19 @@ aoi1_DF.to_csv(("%s/aoi1.csv" %opath), sep=",", header=True, index=True)
 aoi2_DF.to_csv(("%s/aoi2.csv" %opath), sep=",", header=True, index=True)
 aoi3_DF.to_csv(("%s/aoi3.csv" %opath), sep=",", header=True, index=True)
 aoi4_DF.to_csv(("%s/aoi4.csv" %opath), sep=",", header=True, index=True)
+
+
+
+########################
+## subsample dem2012 to 5km px
+
+
+## write out to csv
+dem2012_F="O:/Documents/CHRIS_Bristol/DEM_2012/RUUD_tif_proj_CORRECTED/bed_elev.tif"
+dem2012=geo.SingleBandRaster(dem2012_F, downsampl=5)
+dem12_arr=dem2012.r
+resampDEM_DF=pd.DataFrame(np.round(dem2012.r))
+plt.imshow(dem12_arr), plt.show()
+
+opath="C:/Github/bed2013_3dvis/data"
+resampDEM_DF.to_csv(("%s/dem2012_5km.csv" %opath), sep=",", header=True, index=True)
