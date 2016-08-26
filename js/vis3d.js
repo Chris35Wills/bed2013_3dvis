@@ -24,28 +24,20 @@ var data = [{
            type: 'surface'
         }];
   
-var layout = {
-  title: 'Bedmap 2013',
-  autosize: false,
-  width: 800,
-  height: 800,
-  margin: {
-    l: 65,
-    r: 50,
-    b: 65,
-    t: 90,
-  }
-};
-  //},
-  //xaxis: {
-  //  title: 'Easting',
-  //},
-  //yaxis: {
-  //  title: 'Northing',
-  //}
-//};
-
 ////defining layout properties inside jscript
+//var layout = {
+//  title: 'Bedmap 2013',
+//  autosize: false,
+//  width: 800,
+//  height: 800,
+//  margin: {
+//    l: 65,
+//    r: 50,
+//    b: 65,
+//    t: 90,
+//  }
+//};
+//
 //Plotly.newPlot('mydiv', data, layout); 
 
 ////can also take in the css for the div 
