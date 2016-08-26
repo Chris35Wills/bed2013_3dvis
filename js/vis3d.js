@@ -42,7 +42,8 @@ var data = [{
 
 ////can also take in the css for the div 
 
-var axis = {
+var layout = {
+    title:'Bedmap 2013a',
     xaxis: {
         title: 'x Axis',
         titlefont: {
@@ -61,7 +62,7 @@ var axis = {
     }
     }
 
-Plotly.newPlot('mydiv', data, axis, {title:'Bedmap 2013a'});
+Plotly.newPlot('mydiv', data, layout);
 var plotDiv = document.getElementById('mydiv');
 var plotData = plotDiv.data;
 
