@@ -41,7 +41,27 @@ var data = [{
 //Plotly.newPlot('mydiv', data, layout); 
 
 ////can also take in the css for the div 
-Plotly.newPlot('mydiv', data, {title:'Bedmap 2013'});
+
+var axis = {
+    xaxis: {
+        title: 'x Axis',
+        titlefont: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+      yaxis: {
+        title: 'y Axis',
+        titlefont: {
+          family: 'Courier New, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      }
+    }
+
+Plotly.newPlot('mydiv', data, axis, {title:'Bedmap 2013'});
 var plotDiv = document.getElementById('mydiv');
 var plotData = plotDiv.data;
 
