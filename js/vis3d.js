@@ -44,5 +44,5 @@ var layout = {
   //  title: 'Northing',
   //}
 //};
-Plotly.newPlot('3dimage'', data, layout);
+Plotly.newPlot('mydiv, data, layout);
 });
