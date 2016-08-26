@@ -16,7 +16,7 @@ no_data=-9999.0
 for(i=0;i<z_data.length;i++) // for dem2015_5km --> need to remove hardwiring
 {
   if(z_data[i]==no_data){
-  	z_data[i]=' '
+  	z_data[i]=0;
   }
 }
 
