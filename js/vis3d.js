@@ -44,5 +44,5 @@ var layout = {
   //  title: 'Northing',
   //}
 //};
-Plotly.newPlot('mydiv, data, layout);
+Plotly.newPlot('mydiv', data, layout); //can also take in the css for the div 
 });
