@@ -33,7 +33,7 @@ function unpack(rows, key) {
 }
   
 var z_data=[ ]
-for(i=0;i<599;i++) // for dem2015_5km --> need to remove hardwiring
+for(i=0;i<rows.length;i++) // for dem2015_5km --> need to remove hardwiring
 {
   z_data.push(unpack(rows,i));
 }
