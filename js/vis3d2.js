@@ -10,15 +10,15 @@ for(i=0;i<rows.length;i++) // for dem2015_5km --> need to remove hardwiring
   z_data.push(unpack(rows,i)); // push appends things
 }
 
-//remove no data values from array
-no_data=-9999.0
-
-for(i=0;i<z_data.length;i++) // for dem2015_5km --> need to remove hardwiring
-{
-  if(z_data[i]==no_data){
-  	z_data[i]=0;
-  }
-}
+////remove no data values from array
+//no_data=-9999.0
+//
+//for(i=0;i<z_data.length;i++) // for dem2015_5km --> need to remove hardwiring
+//{
+//  if(z_data[i]==no_data){
+//  	z_data[i]=0;
+//  }
+//}
 
 var data = [{
            z: z_data,
