@@ -50,19 +50,20 @@ var axis = {
           size: 18,
           color: '#7f7f7f'
         }
-      },
-      yaxis: {
+    },
+    yaxis: {
         title: 'y Axis',
         titlefont: {
           family: 'Courier New, monospace',
           size: 18,
           color: '#7f7f7f'
         }
-      }
+    }
     }
 
-Plotly.newPlot('mydiv', data, axis, {title:'Bedmap 2013'});
+Plotly.newPlot('mydiv', data, axis, {title:'Bedmap 2013b'});
 var plotDiv = document.getElementById('mydiv');
 var plotData = plotDiv.data;
 
 });
+
