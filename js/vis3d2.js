@@ -44,16 +44,19 @@ var data = [{
         }];
 
 var layout = {
-  title: 'Sales Growth',
+  title: 'Bedmap 2013c',
   xaxis: {
     title: 'Year',
   },
   yaxis: {
     title: 'Percent',
+  },
+  zaxis: {
+    title: 'Elevation',
   }
 };
 
-Plotly.newPlot('mydiv', data, layout, {title:'Bedmap 2013c'});
+Plotly.newPlot('mydiv', data, layout);
 
 //var plotDiv = document.getElementById('mydiv');
 //var plotData = plotDiv.data;
