@@ -61,7 +61,7 @@ var axis = {
     }
     }
 
-Plotly.newPlot('mydiv', data, axis, {title:'Bedmap 2013b'});
+Plotly.newPlot('mydiv', data, axis, {title:'Bedmap 2013a'});
 var plotDiv = document.getElementById('mydiv');
 var plotData = plotDiv.data;
 
