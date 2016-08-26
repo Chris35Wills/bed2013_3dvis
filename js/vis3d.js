@@ -44,5 +44,13 @@ var layout = {
   //  title: 'Northing',
   //}
 //};
-Plotly.newPlot('mydiv', data, layout); //can also take in the css for the div 
+
+////defining layout properties inside jscript
+//Plotly.newPlot('mydiv', data, layout); 
+
+////can also take in the css for the div 
+Plotly.newPlot('mydiv', data, {title:'Bedmap 2013'});
+var plotDiv = document.getElementById('mydiv');
+var plotData = plotDiv.data;
+
 });
