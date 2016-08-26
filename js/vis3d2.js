@@ -43,6 +43,10 @@ var data = [{
            type: 'surface'
         }];
 
+Plotly.newPlot('mydiv', data, {title:'Bedmap 2013b'});
+var plotDiv = document.getElementById('mydiv');
+var plotData = plotDiv.data;
+
 var axis = {
     xaxis: {
         title: 'x Axis',
@@ -60,11 +64,9 @@ var axis = {
           color: '#7f7f7f'
         }
     }
-    }
+  }
 
-Plotly.newPlot('mydiv', data, {title:'Bedmap 2013b'});
-var plotDiv = document.getElementById('mydiv');
-var plotData = plotDiv.data;
+Plotly.restyle('mydiv', axis)
 
 });
 
